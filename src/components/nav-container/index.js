@@ -22,23 +22,24 @@ export default class App extends Component {
 
   render(props) {
     return (
-      <div class={classNames({[navContainer]: true, [collapsed]: this.state.collapsed})}>
-        <div class="dpLogo">
-          <img src={`../../assets/images/dp-logo.png`}></img>
-          <div class="titleContainer">
-            <div class="hwxText"><span>Hortonworks</span></div>
-            <div class="dpText"><span>DataPlane</span></div>
-          </div>
-        </div>
-        <ul className={style.menu}>
-          <li><a><i className="fa fa-server"></i><span className={style.menuItemText}>Clusters</span></a></li>
-          <li><a><i className="fa fa-users"></i><span className={style.menuItemText}>Users</span></a></li>
-          <li><a><i className="fa fa-server"></i><span className={style.menuItemText}>Services</span></a></li>
-        </ul>
-        <div onClick={this.toggleSideNav}  className={style.expander}>
-          {this.state.collapsed?<i className="fa fa-angle-double-right"></i>:<i className="fa fa-angle-double-left"></i>}
-        </div>
-      </div>
+      <div>Success</div>
+      // <div className={classNames({[style.navContainer]: true, [style.collapsed]: this.state.collapsed})}>
+      //   <div className={style.dpLogo}>
+      //     <img src={`../../assets/images/dp-logo.png`}></img>
+      //     <div class={style.titleContainer}>
+      //       <div className={style.hwxText}><span>Hortonworks</span></div>
+      //       <div className={style.dpText}><span>DataPlane</span></div>
+      //     </div>
+      //   </div>
+      //   <ul className={style.menu}>
+      //     <li><a><i className="fa fa-server"></i><span className={style.menuItemText}>Clusters</span></a></li>
+      //     <li><a><i className="fa fa-users"></i><span className={style.menuItemText}>Users</span></a></li>
+      //     <li><a><i className="fa fa-server"></i><span className={style.menuItemText}>Services</span></a></li>
+      //   </ul>
+      //   <div onClick={this.toggleSideNav}  className={style.expander}>
+      //     {this.state.collapsed?<i className="fa fa-angle-double-right"></i>:<i className="fa fa-angle-double-left"></i>}
+      //   </div>
+      // </div>
     );
   }
 }
