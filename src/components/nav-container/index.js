@@ -1,5 +1,5 @@
 import { h, Component } from "preact";
-import style from "./style.scss";
+import "./style.scss";
 import {fa} from "font-awesome/css/font-awesome.css"
 import classNames from "classnames";
 
@@ -22,12 +22,12 @@ export default class App extends Component {
 
   render(props) {
     return (
-      <div className={classNames({[style.navContainer]: true, [style.collapsed]: this.state.collapsed})}>
-        <div className={style.dpLogo}>
+      <div class={classNames({[navContainer]: true, [collapsed]: this.state.collapsed})}>
+        <div class="dpLogo">
           <img src={`../../assets/images/dp-logo.png`}></img>
-          <div class={style.titleContainer}>
-            <div className={style.hwxText}><span>Hortonworks</span></div>
-            <div className={style.dpText}><span>DataPlane</span></div>
+          <div class="titleContainer">
+            <div class="hwxText"><span>Hortonworks</span></div>
+            <div class="dpText"><span>DataPlane</span></div>
           </div>
         </div>
         <ul className={style.menu}>
