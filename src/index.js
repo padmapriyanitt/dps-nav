@@ -5,9 +5,16 @@ import habitat from "preact-habitat";
 
 import Widget from "./components/nav-container";
 
-let _habitat = habitat(Widget);
+export class DPSNavigation {
+   
+  static init(options) {
+    let _habitat = habitat(Widget);
+    _habitat.render({
+      selector: `[id=${options.id}]`,
+      clean: true
+    });
+   }
+}
 
-_habitat.render({
-  selector: '[data-widget-host="habitat"]',
-  clean: true
-});
+
+
